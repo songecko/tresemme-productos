@@ -1,0 +1,644 @@
+/* 
+    Document   : app
+    Created on : May 21, 2013, 8:43:27 AM
+    Author     : Sammy Guergachi <sguergachi at gmail.com>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+	font-family: 'Conv_Roboto-Light';
+	src: url('../fonts/Roboto-Light.eot');
+	src: local('☺'), url('../fonts/Roboto-Light.woff') format('woff'), url('../fonts/Roboto-Light.ttf') format('truetype'), url('../fonts/Roboto-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*
+{
+	outline: none;
+  border: none;
+}
+
+/*select:focus, option:focus, select::-moz-focus-inner, option::-moz-focus-inner 
+{
+    outline: none;
+    border: none;
+}*/
+
+body
+{
+	height: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	font-family: Conv_Roboto-Light, Arial;
+	font-size: 15.5px;
+	line-height: 18px;
+	background-color: white;
+}
+
+img
+{
+	border: none;
+}
+
+.hide
+{
+	display: none;
+}
+
+body.loading #container, body.loading #temp
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+body.loading #temp
+{
+	display: none;
+}
+
+/*landing*/
+
+.wrapper.landing
+{
+	width: 810px;
+	height: 683px;
+	background-repeat: no-repeat;
+}
+
+.wrapper.landing .copy
+{
+	color: white;
+	padding-top: 326px;
+	padding-left: 145px;
+	width: 378px;
+	max-height: 128px;
+	min-height: 128px;
+	font-size: 15px;
+}
+
+.wrapper.landing .items
+{
+	padding-top: 14px;
+	position: relative;
+	width: 810px;
+	margin: 0 auto;
+}
+
+.wrapper.landing .inner-container
+	{
+		width: 726px;
+		height: 213px;
+		overflow: hidden;
+		float: left;
+	}
+
+.wrapper.landing .items .item
+{
+	width: 236px;
+	height: 213px;
+	position: relative;
+	cursor: pointer;
+}
+
+.wrapper.landing .items .callup
+{
+	width: 187px;
+	height: 80px;
+}
+
+.wrapper.landing .items .callup1
+{
+	left: 9px;
+	top: 30px;
+}
+
+.wrapper.landing .items .callup2
+{
+	left: 67px;
+	top: 31px;
+}
+
+.wrapper.landing .items .callup3
+{
+	left: 63px;
+	top: 28px;
+}
+
+.wrapper.landing .items .item .glow, .wrapper.landing .items .item .callup
+{
+	display: none;
+}
+
+.wrapper.landing .items a:hover .item .glow, .wrapper.landing .items a:hover .item .callup
+{
+	display: block;
+}
+
+.wrapper.landing .img img, .wrapper.landing .callup img
+{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.wrapper.landing .items .item > div
+{
+	position: absolute;
+}
+
+.wrapper.landing .items .arrow-left
+{
+	width: 42px;
+	background: url('../images/left-arrow.png') no-repeat;
+	background-position: 200% 50%;
+	height: 213px;
+	text-decoration: none;
+}
+
+.wrapper.landing .items .arrow-right
+{
+	width: 42px;
+	background: url('../images/right-arrow.png') no-repeat;
+	background-position: 200% 50%;
+	height: 213px;
+	text-decoration: none;
+}
+
+.wrapper.landing a
+{
+	display: inline-block;
+	float: left;
+	color: white;
+}
+
+/*collection*/
+.wrapper.collection
+{
+	width: 810px;
+	height: 683px;
+	background-repeat: no-repeat;
+}
+
+.wrapper.collection .copy
+{
+	color: white;
+	padding-top: 5px;
+	width: 402px;
+	max-height: 158px;
+	min-height: 158px;
+	font-size: 14px;
+}
+
+.wrapper.collection .items
+{
+	padding-top: 14px;
+	position: relative;
+	width: 810px;
+	margin: 0 auto;
+}
+
+.wrapper.collection .items .item
+{
+	position: relative;
+	cursor: pointer;
+}
+
+.wrapper.collection .items .item .glow
+{
+	display: none;
+}
+
+.wrapper.collection .items a:hover .item .glow
+{
+	display: block;
+}
+
+.wrapper.collection .items .item > div
+{
+	position: absolute;
+}
+
+.wrapper.collection .items .arrow-left
+{
+	text-decoration: none;
+	width: 81px;
+	background: url('../images/left-arrow.png') no-repeat;
+	background-position: 200% 50%;
+	height: 160px;
+}
+
+.wrapper.collection .items .arrow-right
+{
+	text-decoration: none;
+	width: 81px;
+	background: url('../images/right-arrow.png') no-repeat;
+	background-position: 200% 50%;
+	height: 160px;
+}
+
+.wrapper.collection .inner-container
+{
+	width: 648px;
+	height: 160px;
+	overflow: hidden;
+	float: left;
+}
+
+.wrapper.collection .elements-wrapper
+{
+	/*width: 100%;*/
+}
+
+.wrapper.collection .header
+{
+	width: 430px;
+	color: #C6B7D9;
+	padding-top: 304px;
+	padding-left: 145px;
+	font-size: 19px;
+}
+
+.wrapper.collection[class*="col"] a.home-link
+{
+	width: 224px;
+	height: 100px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	margin-bottom: 0px;
+}
+
+.wrapper.collection[class*="col"] a.home-flecha
+{
+	width: 93px;
+	height: 48px;
+	position: absolute;
+	top: 202px;
+	left: 5px;
+	margin-bottom: 0px;
+}
+
+.wrapper.collection.col3 .items .item
+{
+	height: 160px;
+	width: 158px;
+}
+
+.wrapper.collection.col2 .items .item
+{
+	height: 160px;
+	width: 158px;
+}
+
+.wrapper.collection.col1 .items .item
+{
+	height: 160px;
+	width: 158px;
+}
+
+/*col1*/
+.wrapper.collection.col1 .glow
+{
+	left: 50%;
+	margin-left: -77px;
+	top: 50%;
+	margin-top: -83px;
+}
+
+.wrapper.collection.col1 .img img, .wrapper.collection.col2 .img img, .wrapper.collection.col3 .img img
+{
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.wrapper.collection.col1 .header
+{
+	color: #C6B7D9;
+	padding-top: 303px;
+}
+
+.wrapper.collection.col1 .copy
+{
+	min-height: 196px;
+	max-height: 196px;
+	font-size: 13px;
+	line-height: 17px;
+	padding-left: 146px;
+}
+
+.wrapper.collection.col1 .items
+{
+	padding-top: 0px;
+}
+
+/*col2*/
+.wrapper.collection.col2 .glow
+{
+	left: 50%;
+	margin-left: -77px;
+	top: 50%;
+	margin-top: -83px;
+}
+
+.wrapper.collection.col2 .header
+{
+	color: #74BAA3;
+	padding-left: 147px;
+	padding-top: 333px;
+	line-height: 22px;
+}
+
+.wrapper.collection.col2 .copy
+{
+	min-height: 141px;
+	max-height: 141px;
+	font-size: 10px;
+	line-height: 15px;
+	padding-left: 147px;
+}
+
+.wrapper.collection.col2 .items
+{
+	padding-top: 0px;
+}
+
+/*col3*/
+.wrapper.collection.col3 .glow
+{
+	left: 50%;
+	margin-left: -80px;
+	top: 50%;
+	margin-top: -80px;
+}
+
+.wrapper.collection.col3 .header
+{
+	color: #9B1B22;
+	padding-top: 316px;
+	padding-left: 138px;
+}
+
+.wrapper.collection.col3 .copy
+{
+	min-height: 184px;
+	max-height: 184px;
+	font-size: 13px;
+	line-height: 15px;
+	padding-left: 140px;
+}
+
+.wrapper.collection.col3 .items
+{
+	padding-top: 0px;
+}
+
+.wrapper.collection a {
+	display: inline-block;
+	float: left;
+	color: white;
+}
+
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) {  }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {  }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {  }
+
+@media (min-width: 768px)
+{ 
+	body
+	{
+/*		background: url('../images/rotate.png') no-repeat #1a1a1c;
+		background-position: center;
+		background-attachment: fixed;*/
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 767px) 
+{ 
+	
+	.wrapper.landing
+	{
+		background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	
+	.wrapper.landing .copy 
+	{
+		padding-left: 10px;
+		width: 92%;
+		max-height: 100%;
+		min-height: 0px;
+		padding-top: 214px;
+	}
+
+	.wrapper.landing .items 
+	{
+		width: 320px;
+		margin: 0 auto;
+	}
+
+	.wrapper.landing {
+		width: 100%;
+		overflow: hidden;
+		height: auto;
+	}
+
+	.wrapper.landing .items .item .callup
+	{
+		display: block;
+	}
+	
+	.wrapper.landing .items a:hover .item .glow
+	{
+		display: none;
+	}
+	
+	.wrapper.landing .inner-container
+	{
+		width: 236px;
+		height: 213px;
+		overflow: hidden;
+		float: left;
+	}
+	
+	.wrapper.landing .elements-wrapper
+	{
+		/*width: 100%;*/
+	}
+	
+	
+	
+	
+	
+	
+	
+	.wrapper.collection[class*="col"] a.home-flecha
+	{
+		/*display: none;*/
+		top: 150px;
+	}
+	
+	.wrapper.collection
+	{
+		width: 320px;
+		/*height: 480px;*/
+		background-repeat: no-repeat;
+		/*background-size: 320px auto;*/
+		background-size: 100%;
+	}
+	
+	.wrapper.collection .items 
+	{
+		width: 320px;
+		margin: 0 auto;
+	}
+	
+	.wrapper.collection a 
+	{
+		display: inline-block;
+		float: left;
+		color: white;
+	}
+
+	.wrapper.collection[class*="col"] .copy 
+	{
+		padding-left: 10px;
+		width: 92%;
+		max-height: 100%;
+		min-height: 0px;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 30px;
+	}
+
+	.wrapper.collection[class*="col"] 
+	{
+		width: 100%;
+		overflow: hidden;
+		height: auto;
+	}
+
+	.wrapper.collection[class*="col"] .header 
+	{
+		width: 92%;
+		padding-left: 10px;
+	}
+
+	.wrapper.collection .items a:hover .item .glow
+	{
+		display: none;
+	}
+	
+	.wrapper.collection .inner-container
+	{
+		width: 158px;
+		height: 160px;
+		overflow: hidden;
+		float: left;
+	}
+	
+	.wrapper.collection .elements-wrapper
+	{
+		/*width: 100%;*/
+	}
+	
+	.wrapper.collection.col1 .header {
+		padding-top: 170px;
+	}
+	
+	.wrapper.collection.col2 .header {
+		padding-top: 230px;
+	}
+	
+	.wrapper.collection.col3 .header {
+		padding-top: 256px;
+	}
+
+	body{
+		background-color: #1a1a1c;
+		overflow: auto;
+		height: auto;
+	}
+	
+	.overlay
+	{
+		/*padding: 0;*/
+		background: black;
+		overflow: hidden;
+		/*padding-right: 140px;*/
+		background-color: #1a1a1c;
+	}
+	
+	.overlay .header
+	{
+		width: 100%;
+		padding: 5px;
+		margin-bottom: 10px;
+		color: white;
+		font-size: 20px;
+	}
+	
+	.overlay .copy
+	{
+		width: 100%;
+		padding: 5px;
+		color: white;
+		font-size: 14px;
+	}
+	
+	.overlay .product
+	{
+		/*float: left;*/
+		width: 140px;
+		height: 320px;
+		margin-top: 50px;
+		background-repeat: no-repeat;
+		background-position: -90px 0px;
+	}
+	
+	.overlay .close
+	{
+		color: white;
+		border-radius: 20px;
+		border: 1px solid white;
+		width: 30px;
+		height: 30px;
+		float: right;
+		font-size: 35px;
+		background-color: black;
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		z-index: 10;
+	}
+	
+	.overlay .main
+	{
+/*		margin: 0 -140px 0 auto;
+		width: 100%;
+		float: right;
+		margin-top: 50px;*/
+		position: absolute;
+		top: 50px;
+		right: 10px;
+		left: 140px;
+	}
+	
+	.overlay .close > div
+	{
+		padding: 4px 0 0 6px;
+	}
+}
