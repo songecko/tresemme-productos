@@ -18,6 +18,20 @@
 						</div>
 					</a>
 					<?php } ?>
+					<a class="ajax-landing" href="<?php echo $this->createUrl('app/collection', array('id' => $model_collections[3]->id_collection)); ?>">
+						<div class="item">
+							<div class="glow"><img src="images/glow_col4.png"/></div>
+							<div class="img"><img src="uploads/originals/<?php echo $model_collections[3]->image_collection; ?>"/></div>
+							<div class="callup1 callup"><img src="images/col_callups-04.png"/></div>
+						</div>
+					</a>
+					<a class="ajax-landing" href="<?php echo $this->createUrl('app/collection', array('id' => $model_collections[4]->id_collection)); ?>">
+						<div class="item">
+							<div class="glow"><img src="images/glow_col5.png"/></div>
+							<div class="img"><img src="uploads/originals/<?php echo $model_collections[4]->image_collection; ?>"/></div>
+							<div class="callup1 callup"><img src="images/col_callups-05.png"/></div>
+						</div>
+					</a>
 					<a class="ajax-landing" href="<?php echo $this->createUrl('app/collection', array('id' => $model_collections[0]->id_collection)); ?>">
 						<div class="item">
 							<div class="glow"><img src="images/glow_col1.png"/></div>

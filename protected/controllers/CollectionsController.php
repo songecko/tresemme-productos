@@ -76,7 +76,7 @@ class CollectionsController extends Controller {
 
 				$model->image_mobile = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName_mobile;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName_mobile;
@@ -100,7 +100,7 @@ class CollectionsController extends Controller {
 
 				$model->image_back = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName_back;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName_back;
@@ -124,7 +124,7 @@ class CollectionsController extends Controller {
 
 				$model->image_collection = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName_collection;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName_collection;
@@ -176,7 +176,7 @@ class CollectionsController extends Controller {
 
 				$model->image_mobile = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName_mobile;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName_mobile;
@@ -199,7 +199,7 @@ class CollectionsController extends Controller {
 
 				$model->image_back = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName_back;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName_back;
@@ -223,7 +223,7 @@ class CollectionsController extends Controller {
 
 				$model->image_collection = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName_collection;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName_collection;
@@ -260,7 +260,7 @@ class CollectionsController extends Controller {
 			$image_back = $model->image_back;
 			$image_collection = $model->image_collection;
 			$image_mobile = $model->image_mobile;
-			$uploadPath = realpath('../tressemme/uploads/');
+			$uploadPath = realpath('./uploads/');
 
 			$orignalPath = $uploadPath . '/originals/';
 			$thumbPath = $uploadPath . '/thumb/';

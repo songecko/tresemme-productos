@@ -3982,3 +3982,97 @@ in /home/sprite9/public_html/tressemme/index.php (13)
 2013/06/10 11:32:35 [warning] [application] Failed to set unsafe attribute "image_mobile" of "TLanding".
 in /home/sprite9/public_html/tressemme/protected/controllers/LandingController.php (89)
 in /home/sprite9/public_html/tressemme/index.php (13)
+2014/03/19 16:34:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\www\projects\tresemme-productos\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projects/tresemme-productos/index.php?r=admin
+---
+2014/03/19 21:25:28 [error] [php] move_uploaded_file(/originals/col4-back-m.jpg5329fd38c7741.jpg): failed to open stream: No such file or directory (D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): CollectionsController->actionCreate()
+#1 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CollectionsController->runAction()
+#3 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CollectionsController->filterAccessControl()
+#6 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CollectionsController->runActionWithFilters()
+#9 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CollectionsController->run()
+#10 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\www\projects\tresemme-productos\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/tresemme-productos/index.php?r=collections/create
+2014/03/19 21:26:05 [error] [php] move_uploaded_file(/originals/col4-back-m.jpg5329fd5d57527.jpg): failed to open stream: No such file or directory (D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): CollectionsController->actionCreate()
+#1 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CollectionsController->runAction()
+#3 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CollectionsController->filterAccessControl()
+#6 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CollectionsController->runActionWithFilters()
+#9 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CollectionsController->run()
+#10 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\www\projects\tresemme-productos\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/tresemme-productos/index.php?r=collections/create
+2014/03/19 21:30:02 [error] [php] move_uploaded_file(/originals/col4-back-m.jpg5329fe4a233bf.jpg): failed to open stream: No such file or directory (D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): CollectionsController->actionCreate()
+#1 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CollectionsController->runAction()
+#3 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CollectionsController->filterAccessControl()
+#6 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CollectionsController->runActionWithFilters()
+#9 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CollectionsController->run()
+#10 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\www\projects\tresemme-productos\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/tresemme-productos/index.php?r=collections/create
+2014/03/19 21:32:03 [error] [php] move_uploaded_file(/originals/col4-back.jpg5329fec363208.jpg): failed to open stream: No such file or directory (D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): CollectionsController->actionCreate()
+#1 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CollectionsController->runAction()
+#3 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CollectionsController->filterAccessControl()
+#6 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CollectionsController->runActionWithFilters()
+#9 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CollectionsController->run()
+#10 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\www\projects\tresemme-productos\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/tresemme-productos/index.php?r=collections/create
+2014/03/19 21:37:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\www\projects\tresemme-productos\protected\controllers\CollectionsController.php:324
+Stack trace:
+#0 D:\www\projects\tresemme-productos\protected\controllers\CollectionsController.php(158): CollectionsController->loadModel('6')
+#1 [internal function]: CollectionsController->actionUpdate('6')
+#2 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(CollectionsController), Array)
+#3 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CollectionsController), Object(ReflectionMethod), Array)
+#4 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#11 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): CController->run('update')
+#13 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController('collections/upd...')
+#14 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\www\projects\tresemme-productos\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projects/tresemme-productos/index.php?r=collections/update&id=6
+HTTP_REFERER=http://localhost/projects/tresemme-productos/index.php?r=collections/index
+---
