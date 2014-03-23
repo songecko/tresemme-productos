@@ -58,6 +58,12 @@ class AppController extends Controller
 		}else if($id == '3'){
 			$col = 'col3';
 			$glow = 'glow_product_col3.png';
+		}else if($id == '4'){
+			$col = 'col4';
+			$glow = 'glow_product_col4.png';
+		}else if($id == '5'){
+			$col = 'col5';
+			$glow = 'glow_product_col5.png';
 		}else{
 			$col = 'col1';
 			$glow = 'glow_product_col1.png';

@@ -4076,3 +4076,19 @@ Stack trace:
 REQUEST_URI=/projects/tresemme-productos/index.php?r=collections/update&id=6
 HTTP_REFERER=http://localhost/projects/tresemme-productos/index.php?r=collections/index
 ---
+2014/03/23 19:12:48 [error] [php] move_uploaded_file(/originals/prod1_col4.png532f24206304d.png): failed to open stream: No such file or directory (D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\actions\CInlineAction.php(49): ProductsController->actionCreate()
+#1 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(133): ProductsController->runAction()
+#3 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CInlineFilter.php(58): ProductsController->filterAccessControl()
+#6 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(291): CFilterChain->run()
+#8 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CController.php(265): ProductsController->runActionWithFilters()
+#9 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(282): ProductsController->run()
+#10 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 D:\www\projects\tresemme-productos\yii-1.1.13.e9e4a0\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#12 D:\www\projects\tresemme-productos\index.php(13): CWebApplication->run()
+REQUEST_URI=/projects/tresemme-productos/index.php?r=products/create

@@ -75,7 +75,7 @@ class ProductsController extends Controller {
 
 				$model->image1 = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName1;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName1;
@@ -134,7 +134,7 @@ class ProductsController extends Controller {
 
 				$model->image1 = $imageName;
 
-				$uploadPath = realpath('../tressemme/uploads/');
+				$uploadPath = realpath('./uploads/');
 
 				$orignalPath = $uploadPath . '/originals/' . $oldImageName1;
 				$thumbPath = $uploadPath . '/thumb/' . $oldImageName1;
@@ -173,7 +173,7 @@ class ProductsController extends Controller {
 			$model = $this->loadModel($_POST['id']);
 			
 			$image1 = $model->image1;
-			$uploadPath = realpath('../tressemme/uploads/');
+			$uploadPath = realpath('./uploads/');
 
 			$orignalPath = $uploadPath . '/originals/' . $image1;
 			$thumbPath = $uploadPath . '/thumb/' . $image1;
