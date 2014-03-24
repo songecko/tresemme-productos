@@ -327,6 +327,7 @@ body.loading #temp
 	color: #C6B7D9;
 	padding-top: 354px;
 	padding-left: 156px;
+	min-height: 36px;
 }
 
 .wrapper.collection.col5 .header
@@ -334,6 +335,7 @@ body.loading #temp
 	color: #C6B7D9;
 	padding-top: 364px;
 	padding-left: 156px;
+	min-height: 36px;
 }
 
 .wrapper.collection.col1 .copy, .wrapper.collection.col4 .copy, .wrapper.collection.col5 .copy
@@ -345,8 +347,18 @@ body.loading #temp
 	padding-left: 146px;
 }
 
-.wrapper.collection.col4 .copy, .wrapper.collection.col5 .copy {
+.wrapper.collection.col4 .copy { 
 	padding-left: 156px;
+	min-height: 126px;
+}
+
+.wrapper.collection.col5 .copy {
+	padding-left: 156px;
+	min-height: 116px;
+}
+
+.wrapper.collection.col4 .inner-container, .wrapper.collection.col5 .inner-container {
+	padding-left: 25px;
 }
 
 .wrapper.collection.col1 .items, .wrapper.collection.col4 .items, .wrapper.collection.col5 .items
