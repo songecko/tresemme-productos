@@ -18,6 +18,7 @@
 						</div>
 					</a>
 					<?php } ?>
+					<!-- <a href="#" class="collectionSeparator"><div class="item"></div></a>-->					
 					<a class="ajax-landing" href="<?php echo $this->createUrl('app/collection', array('id' => $model_collections[3]->id_collection)); ?>">
 						<div class="item">
 							<div class="glow"><img src="images/glow_col4.png"/></div>
@@ -62,4 +63,6 @@
 			</a>
 		</div>
 	</div>
+	
+	<a class="policyPrivacy" href="http://www.unileverprivacypolicy.com/spanish/policy.aspx" target="_blank">Política de Privacidad</a>
 </div>

@@ -29,6 +29,9 @@
 			<a>
 				<div class="arrow-right"></div>
 			</a>
+			
 		</div>
 	</div>
+	
+	<a class="policyPrivacy" href="http://www.unileverprivacypolicy.com/spanish/policy.aspx" target="_blank">Política de Privacidad</a>
 </div>

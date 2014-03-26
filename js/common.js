@@ -40,11 +40,13 @@ $(document).ready(function() {
 			$('.elements-wrapper a').fadeTo(125, 1);
 		});
 
+		var itemsSlider = (isMobile)?1:1;
+		
 		if ($(this).hasClass('arrow-left')) {
-			valLanding += landingSlideWidth;
+			valLanding += landingSlideWidth * itemsSlider;
 		} else {
 			multiplier = $('.elements-wrapper a').length - 1;
-			valLanding -= landingSlideWidth;
+			valLanding -= landingSlideWidth * itemsSlider;
 		}
 
 		$('.elements-wrapper').animate({

@@ -10,6 +10,7 @@ and open the template in the editor.
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/app.css" />
 		<?php Yii::app()->getClientScript()->registerCoreScript('jquery'); ?>
 		<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.ba-hashchange.min.js"></script>
