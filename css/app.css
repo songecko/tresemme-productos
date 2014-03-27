@@ -406,6 +406,7 @@ body.loading #temp
 	font-size: 10px;
 	line-height: 15px;
 	padding-left: 147px;
+	width: 460px;
 }
 
 .wrapper.collection.col2 .items
@@ -581,6 +582,10 @@ body.loading #temp
 		height: auto;
 	}
 
+	.wrapper.collection.col4, .wrapper.collection.col5 {
+		background-color: #000000;
+	} 
+	
 	.wrapper.collection[class*="col"] .header 
 	{
 		width: 92%;

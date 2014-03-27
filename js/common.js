@@ -28,6 +28,7 @@ $(document).ready(function() {
 	var valLanding = 0;
 	var landingSlideWidth = 236;
 	var multiplier;
+	var landingClicked = false;
 	$(document).
 					on('click', '.landing div.arrow-left, .landing div.arrow-right', function(
 					event) {
@@ -36,6 +37,11 @@ $(document).ready(function() {
 		if (!isArrowEnabled($(this)))
 			return;
 
+		if (landingClicked)
+			return;
+
+		landingClicked = true;
+		
 		$('.elements-wrapper a').fadeTo(125, 0.3, function() {
 			$('.elements-wrapper a').fadeTo(125, 1);
 		});
@@ -53,6 +59,8 @@ $(document).ready(function() {
 			marginLeft: valLanding
 		},
 		250, function() {
+			landingClicked = false;
+			
 			if (parseInt($(this).css('margin-left')) < 0) {
 				toogleArrow(true, $('.arrow-left'));
 			} else {
@@ -74,15 +82,15 @@ $(document).ready(function() {
 
 	var valCollection = 0;
 	var collectionSlideWidth = 158;
-	var multiplier;
+	var multiplier;	
 	$(document).
 					on('click', '.collection div.arrow-left, .collection div.arrow-right', function(
 					event) {
 		event.preventDefault();
 
 		if (!isArrowEnabled($(this)))
-			return;
-
+			return;		
+		
 		$('.elements-wrapper a').fadeTo(125, 0.3, function() {
 			$('.elements-wrapper a').fadeTo(125, 1);
 		});
@@ -97,7 +105,7 @@ $(document).ready(function() {
 		$('.elements-wrapper').animate({
 			marginLeft: valCollection
 		},
-		250, function() {
+		250, function() {			
 			if (parseInt($(this).css('margin-left')) < 0) {
 				toogleArrow(true, $('.arrow-left'));
 			} else {
