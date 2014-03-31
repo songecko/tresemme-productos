@@ -46,7 +46,8 @@ $(document).ready(function() {
 			$('.elements-wrapper a').fadeTo(125, 1);
 		});
 
-		var itemsSlider = (isMobile)?1:1;
+		var itemsSlider = (isMobile)?1:3;
+		var itemsSliderDuration = (isMobile)?250:650;
 		
 		if ($(this).hasClass('arrow-left')) {
 			valLanding += landingSlideWidth * itemsSlider;
@@ -58,7 +59,7 @@ $(document).ready(function() {
 		$('.elements-wrapper').animate({
 			marginLeft: valLanding
 		},
-		250, function() {
+		itemsSliderDuration, function() {
 			landingClicked = false;
 			
 			if (parseInt($(this).css('margin-left')) < 0) {
