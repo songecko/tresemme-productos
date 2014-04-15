@@ -1,11 +1,28 @@
 <?php
 
+require_once __DIR__.'/../../mobile-detect/Mobile_Detect.php';
+require_once __DIR__.'/../../php-sdk/facebook.php';
+
 class AppController extends Controller
 {
 	var $layout = false;
 	
 	public function actionIndex()
 	{
+		$detect = new Mobile_Detect;
+		$facebook = new Facebook(array(
+			'appId' => '361977160579483',
+			'secret' => 'f3b486795c02218cdfc69450e9a3609d',
+			'allowSignedRequest' => true,
+			'cookie' => true
+		));
+		$signedRequest = $facebook->getSignedRequest();
+		
+		if(!$detect->isMobile() && $signedRequest == null) 
+		{
+			$this->redirect('https://www.facebook.com/TRESemmePR/app_361977160579483');
+		}
+		
 		$model_landing = TLanding::model()->findByPk('1');
 		$model_collections = TCollections::model()->findAll();
 		
